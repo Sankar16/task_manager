@@ -134,22 +134,22 @@ Using `curl`, you can test each endpoint:
 
 - **Add a Task**:
   ```bash
-  curl -X POST http://127.0.0.1:5000/tasks -H "Content-Type: application/json" -d '{"title": "Buy groceries", "description": "Milk, Bread, Eggs", "priority": "High"}'
+  curl -X POST http://127.0.0.1:5000/task -H "Content-Type: application/json" -d '{"title": "Buy groceries", "description": "Milk, Bread, Eggs", "priority": "High"}'
   ```
 
 - **Get All Tasks**:
   ```bash
-  curl -X GET http://127.0.0.1:5000/tasks
+  curl -X GET http://127.0.0.1:5000/task
   ```
 
 - **Update a Task**:
   ```bash
-  curl -X PUT http://127.0.0.1:5000/tasks/1 -H "Content-Type: application/json" -d '{"title": "Grocery Shopping", "description": "Milk, Bread, Eggs, Butter", "priority": "High", "status": "In Progress"}'
+  curl -X PUT http://127.0.0.1:5000/task/1 -H "Content-Type: application/json" -d '{"title": "Grocery Shopping", "description": "Milk, Bread, Eggs, Butter", "priority": "High", "status": "In Progress"}'
   ```
 
 - **Delete a Task**:
   ```bash
-  curl -X DELETE http://127.0.0.1:5000/tasks/1
+  curl -X DELETE http://127.0.0.1:5000/task/1
   ```
 
 ## Contributing
