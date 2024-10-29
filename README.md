@@ -171,8 +171,4 @@ If you’d like to contribute:
    ```
 5. Open a pull request on GitHub.
 
-## License
 
-This project is open-source and available under the [MIT License](LICENSE).
-
----
