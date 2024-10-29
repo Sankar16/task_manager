@@ -32,7 +32,7 @@ A simple Task Manager application built using **Flask** and **PostgreSQL**, with
 ## Project Structure
 
 ```plaintext
-TaskManagerApp/
+task_manager/
 ├── app.py                  # Flask application with API endpoints
 ├── requirements.txt        # Python dependencies
 ├── templates/
@@ -51,7 +51,7 @@ First, clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/your-username/TaskManagerApp.git
-cd TaskManagerApp
+cd task_manager
 ```
 
 ### 2. Install Dependencies
@@ -85,10 +85,10 @@ Ensure PostgreSQL is installed and running. Then, create a database and user for
 
 ### 4. Initialize the Database Table
 
-Run the following SQL commands in `psql` to create the `tasks` table:
+Run the following SQL commands in `psql` to create the `task` table:
 
 ```sql
-CREATE TABLE tasks (
+CREATE TABLE task (
     id SERIAL PRIMARY KEY,
     title VARCHAR(100),
     description TEXT,
@@ -123,10 +123,10 @@ The Task Manager app includes the following API endpoints:
 
 | Method | Endpoint         | Description              |
 |--------|-------------------|--------------------------|
-| GET    | `/tasks`         | Retrieve all tasks       |
-| POST   | `/tasks`         | Add a new task           |
-| PUT    | `/tasks/<id>`    | Update a task by ID      |
-| DELETE | `/tasks/<id>`    | Delete a task by ID      |
+| GET    | `/task`         | Retrieve all tasks       |
+| POST   | `/task`         | Add a new task           |
+| PUT    | `/task/<id>`    | Update a task by ID      |
+| DELETE | `/task/<id>`    | Delete a task by ID      |
 
 ### Example API Requests
 
