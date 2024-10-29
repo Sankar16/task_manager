@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Task Manager</h1>
+
+    <!-- Form to Add or Update a Task -->
+    <form id="taskForm">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="description" placeholder="Description" required>
+        <input type="text" id="priority" placeholder="Priority (High, Medium, Low)" required>
+        <input type="hidden" id="taskId"> <!-- Hidden field to store task ID for updates -->
+        <button type="submit">Add Task</button>
+    </form>
+
+    <!-- Table to Display Tasks -->
+    <h2>Tasks</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="taskTable">
+            <!-- Tasks will be dynamically loaded here -->
+        </tbody>
+    </table>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
